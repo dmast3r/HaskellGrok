@@ -7,7 +7,7 @@
 - `max`: Takes two things and returns the greater one. Example: `max 100 101` returns `101`.
 
 ## List
-In Haskell, lists are internally implemented as a linked list. Strings in Haskell are list of chars. Haskell lists supports both the append and prepend operation. However, since Haskell doesn't do any side-effects, that is, it doesn't change the existing data, the append operation is `O(N)`, whereas the prepend operation is `O(1)`.
+In Haskell, lists are internally implemented as a linked list. Strings in Haskell are list of chars. Haskell lists support both the append and prepend operation. However, since Haskell doesn't do any side-effects, that is, it doesn't change the existing data, the append operation is `O(N)`, whereas the prepend operation is `O(1)`.
 
 - Use the `++` operator to append. For example, `[1, 2] ++ [3, 4]` returns `[1, 2, 3, 4]`.
 - Use the `:` operator to prepend. For example, `'H':"ello World"` returns `"Hello World"`.
