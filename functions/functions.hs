@@ -36,18 +36,14 @@ power x p
     where
         y = power x (y `div` 2)
 
-{-
-    This implementation uses list comprehension and anonymous lambda.
--}
+-- This implementation uses list comprehension and anonymous lambda.
 isPrime :: Integer -> Bool
 isPrime n
     | n <= 1 = False
     | otherwise = all (\number -> n `rem` number /= 0) (takeWhile (\number -> number * number <= n) [2..])
 
 
-{-
-    This implementation uses only recursion
--}
+-- This implementation uses only recursion
 isPrime' :: Integer -> Bool
 isPrime' n
     | n <= 1 = False
@@ -72,3 +68,4 @@ euclideanDistance (x1, y1) (x2, y2) = sqrt (sq (delta x1 x2) + sq (delta y1 y2))
     where
         sq x = x * x
         delta x y = x - y
+
