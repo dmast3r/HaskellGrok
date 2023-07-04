@@ -3,4 +3,4 @@
 -}
 
 -- Todo: write the method signature
-squareRootSums n = length (takeWhile (<= n) $ scanl1 (+) $ map sqrt [1..]) + 1
+squareRootSums n = length (takeWhile (<= n) $ scanl1 (+) $ map sqrt [1..]) + 1 q
